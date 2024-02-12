@@ -2,7 +2,8 @@ import React from "react";
 
 function MainContent() {
     return (
-        <>
+        <div className="mainContent">
+
             <h1>Fun Facts About React</h1>
             <ul>
                 <li>Was first released in 2013.</li>
@@ -11,7 +12,7 @@ function MainContent() {
                 <li>Is maintained by facebook.</li>
                 <li>Powers thousand of enterprise apps including mobile apps.</li>
                 </ul>
-        </>
+        </div>
     )
 };
 
