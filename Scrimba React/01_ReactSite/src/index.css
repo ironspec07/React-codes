@@ -63,3 +63,11 @@ main {
   font-size: 1.4rem;
   color: #61DAFB;
 }
+
+main {
+  padding: 57px 27px;
+  color: white;
+  background-image: url(../Group.png);
+  background-repeat: no-repeat;
+  background-position: right 75%;
+}
