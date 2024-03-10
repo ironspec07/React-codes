@@ -7,7 +7,14 @@ function App() {
     <>
       <Navbar />
       <MainSection />
-      <Card />
+      <Card 
+        img = "./images/swimmer.png"
+        title = "Life Lessons with Katie Zaferes"
+        rating = "5.0"
+        reviewCount = {6}
+        country = "USA"
+        price = {136}
+      />
     </>
 
   )
