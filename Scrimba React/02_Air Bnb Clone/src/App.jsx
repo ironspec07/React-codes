@@ -1,20 +1,32 @@
 import Navbar from "./components/navbar"
 import MainSection from "./components/mainSection"
 import Card from "./components/card"
+import data from "./data"
 function App() {
+  
+  const cards = data.map(item => {
+    return (
+      <Card 
+        key={item.id}
+        // img={item.coverImg}
+        // rating={item.stats.rating}
+        // reviewCount={item.stats.reviewCount}
+        // location={item.location}
+        // title={item.title}
+        // price={item.price}
+        // openSpots={item.openSpots}
+        {...item}
+      />
+    )
+  })
 
   return (
     <>
       <Navbar />
       <MainSection />
-      <Card 
-        img = "./images/swimmer.png"
-        title = "Life Lessons with Katie Zaferes"
-        rating = "5.0"
-        reviewCount = {6}
-        country = "USA"
-        price = {136}
-      />
+      <section className="cards-list">
+                {cards}
+      </section>
     </>
 
   )
